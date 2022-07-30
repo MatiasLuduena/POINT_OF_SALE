@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Pizza uno",
+        "categoria": "Pizzas",
+        "precio": 15,
+        "imagen": "./imagenes/pizza_1.png"
+    },
+    {
+        "nombre": "Pizza dos",
+        "categoria": "Pizzas",
+        "precio": 17,
+        "imagen": "./imagenes/pizza_2.png"
+    },
+    {
+        "nombre": "Pizza tres",
+        "categoria": "Pizzas",
+        "precio": 13,
+        "imagen": "./imagenes/pizza_3.png"
+    },
+    {
+        "nombre": "Hamburguesa uno",
+        "categoria": "Hamburguesas",
+        "precio": 18,
+        "imagen": "./imagenes/burger_1.png"
+    },
+    {
+        "nombre": "Hamburguesa dos",
+        "categoria": "Hamburguesas",
+        "precio": 20,
+        "imagen": "./imagenes/burger_2.png"
+    },
+    {
+        "nombre": "Hamburguesa tres",
+        "categoria": "Hamburguesas",
+        "precio": 22,
+        "imagen": "./imagenes/burger_3.png"
+    },
+    {
+        "nombre": "Bebida uno",
+        "categoria": "Bebidas",
+        "precio": 5,
+        "imagen":"./imagenes/bebida_1.png"
+    },
+    {
+        "nombre": "Bebida dos",
+        "categoria": "Bebidas",
+        "precio": 9,
+        "imagen": "./imagenes/bebida_2.png"
+    },
+    {
+        "nombre": "Bebida tres",
+        "categoria": "Bebidas",
+        "precio": 10,
+        "imagen": "./imagenes/bebida_3.png"
+    }
+]
