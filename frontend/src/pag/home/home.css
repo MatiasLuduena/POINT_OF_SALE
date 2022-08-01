@@ -1,0 +1,48 @@
+.card {
+    width: 225px;
+    height: auto;
+    box-shadow: 0 0 10px black;
+    margin: 15px;
+}
+
+.card-head img {
+    width: 100%;
+    padding: 15px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.card-body p {
+    font-weight: bold;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-foot p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card-foot_carrito {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.card-foot_carrito p {
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: white;
+    color: darkgreen;
+    border: 1px solid black;
+}
