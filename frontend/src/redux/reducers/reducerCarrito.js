@@ -1,15 +1,15 @@
 import { ANADIR, ELIMINAR_TODOS, ELIMINAR_UNO, LEER_DATOS } from "../../redux/types";
 
 let estadoInicial = {
-    cargando: false,
-    carrito: [],
-    productos: []
+    carrito: localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem('carrito')) : [],
+    productos: [],
+    cargando: true
 }
 
 export default function reducerCarrito(state = estadoInicial, action) {
     switch (action.type) {
         case LEER_DATOS: {
-            return {...state, productos: action.payload }
+            return {...state, productos: action.payload, cargando: false };
         }
         case ANADIR: {
             let nuevoProducto = state.productos.find(
@@ -26,7 +26,9 @@ export default function reducerCarrito(state = estadoInicial, action) {
                 carrito: state.carrito.map((item) => (
                     item._id === nuevoProducto._id ? {
                         ...item, cantidad: item.cantidad + 1
-                    } : item
+                    } : { 
+                        item
+                    }
                 ))
             } : {
                 ...state,
@@ -40,7 +42,7 @@ export default function reducerCarrito(state = estadoInicial, action) {
         };
         case ELIMINAR_TODOS: return {
             ...state, carrito: []
-        }
+        };
         default: return state;
     }
 }

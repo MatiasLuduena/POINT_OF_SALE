@@ -8,3 +8,11 @@
 .btn-nav:hover {
     text-decoration: underline;
 }
+
+svg {
+    color: rgb(200, 200, 200);
+}
+
+svg:hover {
+    color: #fff;
+}
