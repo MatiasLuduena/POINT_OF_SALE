@@ -25,7 +25,10 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 
 // Rutas
 import rutaProductos from "./rutas/ProductosRutas.js";
+import usuariosRutas from "./rutas/usuariosRutas.js";
+
 app.use('/api/productos', rutaProductos);
+app.use('/api/usuarios', usuariosRutas);
 
 // Puerto
 const puerto = process.env.PUERTO;
